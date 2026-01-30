@@ -693,7 +693,7 @@ section {
 
 .product-card {
     background: var(--gray-50);
-    padding: var(--spacing-lg);
+    /* padding: var(--spacing-lg); */
     border-radius: var(--radius-md);
     transition: var(--transition-base);
     border: 2px solid transparent;
@@ -706,16 +706,31 @@ section {
 }
 
 .product-icon {
-    font-size: 3rem;
-    margin-bottom: var(--spacing-md);
+    width: 100%;
+    height: 200px;              /* FIXED HEIGHT */
+    overflow: hidden;
+    border-radius: var(--radius-md) var(--radius-md) 0 0;
+    background: #f5f5f5;
+}
+
+.product-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;          /* KEY PROPERTY */
+    display: block;
 }
 
 .product-card h4 {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
     font-size: 1.3rem;
     margin-bottom: var(--spacing-sm);
+    margin-top: var(--spacing-sm);
 }
 
 .product-card > p {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
     font-size: 0.95rem;
     color: var(--gray-600);
     margin-bottom: var(--spacing-md);
@@ -723,11 +738,15 @@ section {
 }
 
 .product-card ul {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
     list-style: none;
     margin-bottom: var(--spacing-md);
 }
 
 .product-card ul li {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
     font-size: 0.9rem;
     color: var(--gray-700);
     padding-left: var(--spacing-md);
@@ -736,6 +755,8 @@ section {
 }
 
 .product-card ul li::before {
+    /* padding-left: var(--spacing-lg); */
+    
     content: '✓';
     position: absolute;
     left: 0;
@@ -744,6 +765,8 @@ section {
 }
 
 .product-link {
+    padding-left: var(--spacing-lg);
+    padding-right: var(--spacing-lg);
     display: inline-block;
     color: var(--primary-red);
     font-weight: 600;
@@ -751,6 +774,7 @@ section {
     text-transform: uppercase;
     letter-spacing: 0.5px;
     transition: var(--transition-base);
+    margin-bottom: var(--spacing-xs);
 }
 
 .product-link:hover {
@@ -852,6 +876,7 @@ section {
     padding: var(--spacing-lg);
     border-radius: var(--radius-md);
     margin-bottom: var(--spacing-md);
+    margin-top: var(--spacing-sm);
     border-left: 4px solid var(--primary-red);
 }
 
@@ -1505,6 +1530,39 @@ section {
 /* ========================================
    SCROLL TO TOP
    ======================================== */
+
+.whatsapp-float {
+    position: fixed;
+    bottom: var(--spacing-xl);
+    left: var(--spacing-xl);
+    width: 60px;
+    height: 60px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    z-index: 999;
+    transition: var(--transition-base);
+    animation: pulse 2s infinite;
+}
+
+.whatsapp-float:hover {
+    background: #128C7E;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.6);
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(37, 211, 102, 0.4);
+    }
+    50% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.8), 0 0 0 10px rgba(37, 211, 102, 0.1);
+    }
+}
 
 .scroll-top {
     position: fixed;
