@@ -1,106 +1,1173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Aplus Makers | Coming Soon</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Aplus Makers - Leading manufacturer of GRC, FRP, and concrete products in Noida, India. Bringing beauty to every structure with precision craftsmanship."
+    />
+    <meta
+      name="keywords"
+      content="GRC manufacturer, FRP products, concrete products, Noida, manufacturing, architectural elements, jaali, balusters, cornices"
+    />
+    <meta name="author" content="Aplus Makers" />
+    <title>
+      Aplus Makers | GRC, FRP & Concrete Manufacturing | Bringing Beauty To
+      Every Structure
+    </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@300;400;500;600;700;800&family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header & Navigation -->
+    <header id="header">
+      <nav class="navbar">
+        <div class="container nav-container">
+          <a href="#home" class="logo">
+            <img
+              src="./images/logo.png"
+              alt="Aplus Makers Logo"
+              class="logo-img"
+            />
+            <span class="logo-text">Aplus Makers</span>
+          </a>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-    }
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
 
-    body {
-      height: 100vh;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #ffffff;
-    }
+          <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#products" class="nav-link">Products</a></li>
+            <li><a href="#manufacturing" class="nav-link">Manufacturing</a></li>
+            <li><a href="#gallery" class="nav-link">Gallery</a></li>
+            <li><a href="#clients" class="nav-link">Clients</a></li>
+            <li><a href="#contact" class="nav-link cta-nav">Contact Us</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
-    .container {
-      text-align: center;
-      padding: 40px;
-      max-width: 500px;
-      width: 90%;
-      background: rgba(255, 255, 255, 0.08);
-      border-radius: 16px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-    }
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-background"></div>
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">Est. 2026 | Greater Noida, India</div>
+          <h1 class="hero-title">
+            <span class="title-line">Precision</span>
+            <span class="title-line">Manufacturing</span>
+            <span class="title-line accent">Excellence</span>
+          </h1>
+          <p class="hero-subtitle">
+            Leading manufacturer of GRC, FRP & Concrete architectural products
+          </p>
+          <p class="hero-tagline">|| Bringing Beauty To Every Structure ||</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Get A Quote</a>
+            <a href="#products" class="btn btn-secondary">View Products</a>
+          </div>
+        </div>
 
-    .logo {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 20px;
-      border-radius: 50%;
-      background: #ffffff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #2c5364;
-      font-size: 32px;
-      font-weight: bold;
-    }
+        <div class="hero-features">
+          <div class="feature-card">
+            <div class="feature-icon">🏭</div>
+            <h3>State-of-the-Art Manufacturing</h3>
+            <p>Advanced techniques & equipment</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">⚙️</div>
+            <h3>Custom Solutions</h3>
+            <p>Tailored to your requirements</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">✓</div>
+            <h3>Quality Assured</h3>
+            <p>Premium materials & craftsmanship</p>
+          </div>
+          <div class="feature-card">
+            <div class="feature-icon">📍</div>
+            <h3>Based in Noida</h3>
+            <p>Serving pan-India projects</p>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
 
-    h1 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      letter-spacing: 1px;
-    }
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Who We Are</span>
+          <h2 class="section-title">
+            Building Trust Through
+            <span class="accent">Quality Manufacturing</span>
+          </h2>
+        </div>
 
-    h2 {
-      font-size: 18px;
-      font-weight: normal;
-      opacity: 0.9;
-      margin-bottom: 30px;
-    }
+        <div class="about-grid">
+          <div class="about-content">
+            <h3>Our Story</h3>
+            <p>
+              Established in 2026, Aplus Makers emerged with a clear vision: to
+              revolutionize the architectural products manufacturing industry in
+              India. Based in Noida, Uttar Pradesh, we specialize in the
+              manufacture and supply of premium GRC (Glass Fibre Reinforced
+              Concrete), FRP (Fibre Reinforced Plastic), and concrete products
+              for both small and large-scale projects.
+            </p>
 
-    .divider {
-      width: 60px;
-      height: 4px;
-      background: #00e6e6;
-      margin: 0 auto 30px;
-      border-radius: 2px;
-    }
+            <p>
+              From our state-of-the-art facility, we combine traditional
+              craftsmanship with modern manufacturing techniques to deliver
+              products that don't just meet specifications—they exceed
+              expectations. Every piece we create embodies our commitment to
+              bringing beauty to every structure.
+            </p>
 
-    p {
-      font-size: 16px;
-      line-height: 1.6;
-      opacity: 0.85;
-    }
+            <div class="about-stats">
+              <div class="stat-item">
+                <h4>2026</h4>
+                <p>Year Established</p>
+              </div>
+              <div class="stat-item">
+                <h4>10+</h4>
+                <p>Skilled Workforce</p>
+              </div>
+              <div class="stat-item">
+                <h4>100%</h4>
+                <p>Quality Focus</p>
+              </div>
+              <div class="stat-item">
+                <h4>Pan-India</h4>
+                <p>Service Coverage</p>
+              </div>
+            </div>
+          </div>
 
-    footer {
-      margin-top: 30px;
-      font-size: 14px;
-      opacity: 0.6;
-    }
-  </style>
-</head>
+          <div class="about-sidebar">
+            <div class="mission-card">
+              <h4>Our Vision</h4>
+              <p>
+                To become India's most trusted name in architectural product
+                manufacturing, known for uncompromising quality and innovative
+                solutions.
+              </p>
+            </div>
 
-<body>
-  <div class="container">
-    <!-- Replace this with your actual logo image if available -->
-    <!-- Example: <img src="logo.png" class="logo" alt="Aplus Makers Logo"> -->
-    <img src="./images/logo.png" class="logo" alt="Aplus Makers Logo">
+            <div class="mission-card">
+              <h4>Our Mission</h4>
+              <p>
+                To deliver superior GRC, FRP, and concrete products that enhance
+                architectural beauty while maintaining the highest standards of
+                durability and precision.
+              </p>
+            </div>
 
-    <h1>Aplus Makers</h1>
-    <h2>Website Under Construction</h2>
+            <div class="mission-card">
+              <h4>Manufacturing Philosophy</h4>
+              <p>
+                We believe in precision, quality, and continuous improvement.
+                Every product undergoes rigorous quality checks, and we use only
+                premium materials from trusted suppliers like BASF, Birla, and
+                Japanese fiber manufacturers.
+              </p>
+            </div>
+          </div>
+        </div>
 
-    <div class="divider"></div>
+        <div class="director-message">
+          <div class="director-content">
+            <div class="director-info">
+              <h3>Message from Our Director</h3>
+              <p class="director-quote">
+                "At Aplus Makers, we don't just manufacture products—we craft
+                solutions that stand the test of time. Our commitment to
+                quality, innovation, and customer satisfaction drives everything
+                we do. As we embark on this journey, we promise to bring beauty,
+                durability, and excellence to every structure we touch."
+              </p>
+              <div class="director-signature">
+                <strong>Ashish Kushwaha</strong>
+                <span>Director & Founder</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <p>
-      We’re building something amazing.<br />
-      Our website will be live very soon.
-    </p>
+    <!-- Products Section -->
+    <section id="products" class="products-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">What We Make</span>
+          <h2 class="section-title">
+            Our <span class="accent">Product Range</span>
+          </h2>
+          <p class="section-subtitle">
+            Comprehensive solutions for architectural and structural needs
+          </p>
+        </div>
 
-    <footer>
-      © 2026 Aplus Makers. All rights reserved.
+        <div class="product-categories">
+          <!-- GRC Products -->
+          <div class="product-category">
+            <div class="category-header">
+              <h3>GRC Products</h3>
+              <p>Glass Fibre Reinforced Concrete</p>
+            </div>
+            <div class="product-grid">
+              <div class="product-card">
+                <div class="product-icon">🕌</div>
+                <h4>GRC Jaali & Panels</h4>
+                <p>
+                  Intricate decorative screens and wall panels with superior
+                  strength and detail
+                </p>
+                <ul>
+                  <li>Custom patterns available</li>
+                  <li>Weather resistant</li>
+                  <li>Lightweight yet durable</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🏛️</div>
+                <h4>Balusters & Cornices</h4>
+                <p>Elegant architectural elements for facades and interiors</p>
+                <ul>
+                  <li>Various classical styles</li>
+                  <li>Precision molding</li>
+                  <li>High compressive strength</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">⛩️</div>
+                <h4>Arches & Domes</h4>
+                <p>
+                  Large-scale architectural features with structural integrity
+                </p>
+                <ul>
+                  <li>Custom dimensions</li>
+                  <li>Lightweight construction</li>
+                  <li>Easy installation</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🎭</div>
+                <h4>Moldings & Brackets</h4>
+                <p>Decorative elements for refined finishing touches</p>
+                <ul>
+                  <li>Intricate detailing</li>
+                  <li>Multiple finish options</li>
+                  <li>Long-lasting durability</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- FRP Products -->
+          <div class="product-category">
+            <div class="category-header">
+              <h3>FRP Products</h3>
+              <p>Fibre Reinforced Plastic</p>
+            </div>
+            <div class="product-grid">
+              <div class="product-card">
+                <div class="product-icon">🗿</div>
+                <h4>Sculptures & Statues</h4>
+                <p>
+                  Custom artistic creations with weather-resistant properties
+                </p>
+                <ul>
+                  <li>Life-like detailing</li>
+                  <li>Corrosion resistant</li>
+                  <li>Lightweight & portable</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🚪</div>
+                <h4>Main Gates & Doors</h4>
+                <p>Grand entrance solutions with superior finish</p>
+                <ul>
+                  <li>Custom designs</li>
+                  <li>Rot & rust proof</li>
+                  <li>Low maintenance</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🕉️</div>
+                <h4>Temples & Mandirs</h4>
+                <p>Complete temple structures and components</p>
+                <ul>
+                  <li>Traditional designs</li>
+                  <li>Quick installation</li>
+                  <li>Weather resistant</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🏺</div>
+                <h4>Decorative Elements</h4>
+                <p>Custom FRP products for unique applications</p>
+                <ul>
+                  <li>Versatile applications</li>
+                  <li>Color options available</li>
+                  <li>High strength-to-weight ratio</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concrete Products -->
+          <div class="product-category">
+            <div class="category-header">
+              <h3>Concrete Products</h3>
+              <p>Premium Concrete Solutions</p>
+            </div>
+            <div class="product-grid">
+              <div class="product-card">
+                <div class="product-icon">🏢</div>
+                <h4>Marriage Halls</h4>
+                <p>
+                  Complete structural and decorative solutions for banquet halls
+                </p>
+                <ul>
+                  <li>Custom layouts</li>
+                  <li>Integrated design</li>
+                  <li>Durable construction</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🏛️</div>
+                <h4>Office Spaces</h4>
+                <p>Architectural concrete elements for commercial buildings</p>
+                <ul>
+                  <li>Modern aesthetics</li>
+                  <li>Functional design</li>
+                  <li>Quick turnaround</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">🧱</div>
+                <h4>Wall Panels</h4>
+                <p>Precast concrete panels for rapid construction</p>
+                <ul>
+                  <li>Various textures</li>
+                  <li>Excellent insulation</li>
+                  <li>Cost-effective</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+
+              <div class="product-card">
+                <div class="product-icon">⚡</div>
+                <h4>Custom Concrete Work</h4>
+                <p>Specialized concrete products for unique requirements</p>
+                <ul>
+                  <li>Engineering support</li>
+                  <li>Quality concrete mix</li>
+                  <li>Timely delivery</li>
+                </ul>
+                <a href="#contact" class="product-link">Request Quote →</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-cta">
+          <h3>Can't find what you're looking for?</h3>
+          <p>
+            We specialize in custom manufacturing solutions tailored to your
+            exact specifications
+          </p>
+          <a href="#contact" class="btn btn-primary">Discuss Your Project</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Manufacturing Process Section -->
+    <section id="manufacturing" class="manufacturing-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">How We Do It</span>
+          <h2 class="section-title">
+            Our <span class="accent">Manufacturing Process</span>
+          </h2>
+          <p class="section-subtitle">
+            Precision engineering meets traditional craftsmanship
+          </p>
+        </div>
+
+        <!-- GRC Manufacturing -->
+        <div class="process-block">
+          <div class="process-header">
+            <h3>GRC (GFRC) Manufacturing Process</h3>
+            <p>Glass Fibre Reinforced Concrete Technology</p>
+          </div>
+
+          <div class="process-content">
+            <div class="process-info">
+              <h4>Material Composition</h4>
+              <ul class="material-list">
+                <li>
+                  <strong>Cement:</strong> Birla White Cement - High-grade OPC
+                  for superior finish
+                </li>
+                <li>
+                  <strong>Sand:</strong> Premium Rajasthani silica sand -
+                  Optimal particle size distribution
+                </li>
+                <li>
+                  <strong>Fibers:</strong> Japanese AR (Alkali Resistant) glass
+                  fibers - 5% by weight
+                </li>
+                <li>
+                  <strong>Admixtures:</strong> BASF chemicals for enhanced
+                  performance
+                </li>
+                <li>
+                  <strong>Water:</strong> Controlled W/C ratio for optimal
+                  strength
+                </li>
+              </ul>
+
+              <h4>Mix Ratio</h4>
+              <p class="mix-ratio">
+                Cement : Sand : Fiber : Admixture = 1 : 1 : 0.05 : 0.01 (by
+                weight)
+              </p>
+            </div>
+
+            <div class="process-methods">
+              <h4>Manufacturing Methods</h4>
+              <div class="method-card">
+                <h5>1. Hand Spray-Up Method</h5>
+                <p>
+                  For complex shapes and intricate details. Fiber and cement
+                  matrix are simultaneously sprayed onto molds, providing
+                  excellent surface finish and structural integrity.
+                </p>
+                <ul>
+                  <li>Ideal for decorative panels, jaalis, and sculptures</li>
+                  <li>Superior surface quality</li>
+                  <li>Optimal fiber orientation</li>
+                </ul>
+              </div>
+
+              <div class="method-card">
+                <h5>2. Vibration Casting Method</h5>
+                <p>
+                  For flat panels and regular shapes. Pre-mixed GRC is poured
+                  into molds and vibrated to remove air pockets, ensuring
+                  uniform density and strength.
+                </p>
+                <ul>
+                  <li>Best for wall panels and cornices</li>
+                  <li>Consistent thickness</li>
+                  <li>High production efficiency</li>
+                </ul>
+              </div>
+
+              <div class="method-card">
+                <h5>3. Spray Premix Method</h5>
+                <p>
+                  For large-scale production. Pre-mixed slurry with chopped
+                  fibers is sprayed, combining speed with quality for
+                  medium-complexity products.
+                </p>
+                <ul>
+                  <li>Suitable for balusters and brackets</li>
+                  <li>Good fiber distribution</li>
+                  <li>Faster production cycles</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- FRP Manufacturing -->
+        <div class="process-block">
+          <div class="process-header">
+            <h3>FRP Manufacturing Process</h3>
+            <p>Fibre Reinforced Plastic Technology</p>
+          </div>
+
+          <div class="process-content">
+            <div class="process-info">
+              <h4>Material Composition</h4>
+              <ul class="material-list">
+                <li>
+                  <strong>Resin:</strong> Polyester/Epoxy resin systems - UV
+                  resistant formulations
+                </li>
+                <li>
+                  <strong>Fiber:</strong> E-glass or S-glass fibers - High
+                  tensile strength
+                </li>
+                <li>
+                  <strong>Catalyst:</strong> MEKP (Methyl Ethyl Ketone Peroxide)
+                  for curing
+                </li>
+                <li>
+                  <strong>Additives:</strong> Colorants, UV stabilizers, and
+                  fire retardants
+                </li>
+                <li>
+                  <strong>Gel Coat:</strong> Premium surface finish coating
+                </li>
+              </ul>
+            </div>
+
+            <div class="process-methods">
+              <h4>Manufacturing Methods</h4>
+              <div class="method-card">
+                <h5>1. Hand Lay-Up Process</h5>
+                <p>
+                  Traditional method offering maximum design flexibility. Fiber
+                  mats or fabrics are manually placed in molds and saturated
+                  with resin, layer by layer.
+                </p>
+                <ul>
+                  <li>Perfect for sculptures and custom shapes</li>
+                  <li>Excellent surface detailing</li>
+                  <li>Suitable for low to medium production volumes</li>
+                  <li>Minimal tool investment</li>
+                </ul>
+              </div>
+
+              <div class="method-card">
+                <h5>2. Pultrusion Process</h5>
+                <p>
+                  Continuous process for constant cross-section products. Fibers
+                  are pulled through a resin bath and then through a heated die
+                  for curing.
+                </p>
+                <ul>
+                  <li>Ideal for pipes, rods, and profiles</li>
+                  <li>High fiber content (70%+)</li>
+                  <li>Superior mechanical properties</li>
+                  <li>Cost-effective for high volumes</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quality Materials -->
+        <div class="materials-showcase">
+          <h3>Premium Materials We Use</h3>
+          <div class="materials-grid">
+            <div class="material-card">
+              <h4>Rajasthani Silica Sand</h4>
+              <p>
+                Naturally white, high-purity sand with optimal grading for
+                superior finish and strength
+              </p>
+            </div>
+            <div class="material-card">
+              <h4>Japanese Fibers</h4>
+              <p>
+                Alkali-resistant glass fibers ensuring long-term durability and
+                crack resistance
+              </p>
+            </div>
+            <div class="material-card">
+              <h4>BASF Chemicals</h4>
+              <p>
+                World-class admixtures and additives for enhanced performance
+                and workability
+              </p>
+            </div>
+            <div class="material-card">
+              <h4>Birla White Cement</h4>
+              <p>
+                Premium white cement providing exceptional whiteness and
+                superior strength
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation & Finishing Section -->
+    <section id="installation" class="installation-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Professional Service</span>
+          <h2 class="section-title">
+            Installation & <span class="accent">Finishing</span>
+          </h2>
+        </div>
+
+        <div class="installation-grid">
+          <div class="installation-card">
+            <div class="install-icon">👷</div>
+            <h3>Expert Installation</h3>
+            <p>
+              Our team of skilled craftsmen ensures precise installation of
+              every product, maintaining structural integrity and aesthetic
+              appeal.
+            </p>
+            <ul>
+              <li>Experienced installation crew</li>
+              <li>Safety-first approach</li>
+              <li>Minimal disruption to site operations</li>
+              <li>Adherence to project timelines</li>
+            </ul>
+          </div>
+
+          <div class="installation-card">
+            <div class="install-icon">🔧</div>
+            <h3>Premium Fasteners</h3>
+            <p>
+              We use only the best fastening systems for secure, long-lasting
+              installation.
+            </p>
+            <ul>
+              <li>Hilti fastening systems</li>
+              <li>HP or equivalent grade fasteners</li>
+              <li>Corrosion-resistant hardware</li>
+              <li>Load-tested anchoring solutions</li>
+            </ul>
+          </div>
+
+          <div class="installation-card">
+            <div class="install-icon">🎨</div>
+            <h3>Superior Finishing</h3>
+            <p>
+              Multiple finishing options to match your exact requirements and
+              aesthetic vision.
+            </p>
+            <ul>
+              <li>DDL & SBR chemical applications</li>
+              <li>Synthetic putty for smooth finish</li>
+              <li>Wall tape for seamless joints</li>
+              <li>Texture matching capabilities</li>
+            </ul>
+          </div>
+
+          <div class="installation-card">
+            <div class="install-icon">✅</div>
+            <h3>Quality Assurance</h3>
+            <p>
+              Post-installation inspection and quality checks ensure complete
+              satisfaction.
+            </p>
+            <ul>
+              <li>Detailed quality checklists</li>
+              <li>Alignment and level verification</li>
+              <li>Surface finish inspection</li>
+              <li>Client walkthrough and approval</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="finishing-materials">
+          <h3>Finishing Materials Used</h3>
+          <div class="finish-grid">
+            <div class="finish-item">
+              <strong>DDL Chemicals</strong>
+              <p>Premium grade bonding and sealing solutions</p>
+            </div>
+            <div class="finish-item">
+              <strong>SBR Latex</strong>
+              <p>Styrene-Butadiene Rubber for enhanced adhesion</p>
+            </div>
+            <div class="finish-item">
+              <strong>Synthetic Putty</strong>
+              <p>Smooth surface preparation for perfect finishes</p>
+            </div>
+            <div class="finish-item">
+              <strong>Wall Tape</strong>
+              <p>Reinforcement for joints and seams</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Our Work</span>
+          <h2 class="section-title">
+            Project <span class="accent">Gallery</span>
+          </h2>
+          <p class="section-subtitle">
+            Witness the quality and precision of our craftsmanship
+          </p>
+        </div>
+
+        <div class="gallery-categories">
+          <button class="gallery-filter active" data-filter="all">
+            All Projects
+          </button>
+          <button class="gallery-filter" data-filter="factory">Factory</button>
+          <button class="gallery-filter" data-filter="process">
+            Manufacturing Process
+          </button>
+          <button class="gallery-filter" data-filter="installed">
+            Installed Projects
+          </button>
+          <button class="gallery-filter" data-filter="products">
+            Finished Products
+          </button>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item" data-category="factory">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🏭</div>
+              <p>Factory Overview</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="factory">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">⚙️</div>
+              <p>Manufacturing Floor</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="process">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🔨</div>
+              <p>GRC Spray Process</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="process">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🎨</div>
+              <p>Mold Preparation</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="installed">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🏛️</div>
+              <p>Facade Installation</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="installed">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🕌</div>
+              <p>Jaali Installation</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="products">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🗿</div>
+              <p>Finished Sculpture</p>
+            </div>
+          </div>
+          <div class="gallery-item" data-category="products">
+            <div class="gallery-placeholder">
+              <div class="placeholder-icon">🏺</div>
+              <p>Decorative Panel</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-note">
+          <p>
+            📸 Image gallery placeholder - Add your actual project images to
+            showcase your work
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Trusted By</span>
+          <h2 class="section-title">
+            Our <span class="accent">Valued Clients</span>
+          </h2>
+          <p class="section-subtitle">
+            Building relationships through quality and reliability
+          </p>
+        </div>
+
+        <div class="clients-grid">
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>GBP</span>
+            </div>
+            <h4>Global Business Park</h4>
+            <p>Gurugram</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>MB</span>
+            </div>
+            <h4>Monsoon Breeze</h4>
+            <p>Gurugram</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>EAS</span>
+            </div>
+            <h4>East Avenue Society</h4>
+            <p>Noida</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>PC</span>
+            </div>
+            <h4>Pawansut Construction</h4>
+            <p>Jabalpur</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>HK</span>
+            </div>
+            <h4>Hotel Highway King</h4>
+            <p>Bhopal</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>LDA</span>
+            </div>
+            <h4>LDA</h4>
+            <p>Lucknow</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>MIL</span>
+            </div>
+            <h4>Meghalaya Infratech Limited</h4>
+            <p>Meghalaya</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>KP</span>
+            </div>
+            <h4>Hotel Karthika Park</h4>
+            <p>Kerala</p>
+          </div>
+
+          <div class="client-card">
+            <div class="client-logo-placeholder">
+              <span>+</span>
+            </div>
+            <h4>And Many More</h4>
+            <p>Across India</p>
+          </div>
+        </div>
+
+        <div class="client-testimonial">
+          <blockquote>
+            "Working with Aplus Makers has been a game-changer for our projects.
+            Their attention to detail, quality of products, and timely delivery
+            sets them apart in the industry."
+          </blockquote>
+          <cite>— Leading Architect, Delhi NCR</cite>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <div class="section-header center">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">
+            Let's Build Something <span class="accent">Beautiful Together</span>
+          </h2>
+          <p class="section-subtitle">
+            Ready to discuss your project? We're here to help
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-form-wrapper">
+            <form
+              class="contact-form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="2c1f306d-f89f-460c-9a2b-1e778e27c561"
+              />
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Your name"
+                />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required
+                    placeholder="your@email.com"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="phone">Phone *</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    placeholder="+91 XXXXX XXXXX"
+                  />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a topic</option>
+                  <option value="quote">Request a Quote</option>
+                  <option value="grc">GRC Products Inquiry</option>
+                  <option value="frp">FRP Products Inquiry</option>
+                  <option value="concrete">Concrete Products Inquiry</option>
+                  <option value="custom">Custom Manufacturing</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  placeholder="Tell us about your project requirements..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-full">
+                Send Message
+              </button>
+            </form>
+          </div>
+
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon">
+                <img
+                  src="images/location.png"
+                  alt="location pin"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <h4>Visit Us</h4>
+              <!-- <p>Chowk Institutional Green<br>Surajpur, Greater Noida<br>Uttar Pradesh – 201306</p> -->
+              <p>
+                Plot No. 122, Block C, Ecotech III<br />Greater Noida<br />Uttar
+                Pradesh – 201318
+              </p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <img
+                  src="images/phone.png"
+                  alt="location pin"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <h4>Call Us</h4>
+              <p><a href="tel:+919643482200">+91 96434 82200</a></p>
+              <p><small>Mon - Sat: 9:00 AM - 5:00 PM</small></p>
+            </div>
+
+            <div class="info-card">
+              <div class="info-icon">
+                <img
+                  src="images/email.png"
+                  alt="location pin"
+                  width="40"
+                  height="40"
+                />
+              </div>
+              <h4>Email Us</h4>
+              <p>
+                <a href="mailto:aplusmakers@gmail.com">aplusmakers@gmail.com</a>
+              </p>
+              <!-- <p><a href="mailto:sales@aplusmakers.com">sales@aplusmakers.com</a></p> -->
+            </div>
+
+            <div class="info-card map-card">
+              <h4>Location Map</h4>
+              <div class="map-placeholder">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.1002569512275!2d77.4522355!3d28.536706100000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce9558bbd21bb%3A0x4b403316cf152d87!2sAplus%20Makers!5e0!3m2!1sen!2sin!4v1769770986150!5m2!1sen!2sin"
+                  width="100%"
+                  height="200"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.8779088894!2d77.50281731508047!3d28.461329082481997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc1c1c1c1c1c1%3A0x1c1c1c1c1c1c1c1c!2sGreater%20Noida%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1234567890123!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img
+                src="./images/logo.png"
+                alt="Aplus Makers"
+                class="footer-logo-img"
+              />
+              <span>Aplus Makers</span>
+            </div>
+            <p class="footer-tagline">
+              || Bringing Beauty To Every Structure ||
+            </p>
+            <p class="footer-desc">
+              Premium manufacturer of GRC, FRP, and concrete architectural
+              products, serving projects across India with uncompromising
+              quality.
+            </p>
+          </div>
+
+          <div class="footer-col">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About Us</a></li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#manufacturing">Manufacturing</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#clients">Clients</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Products</h4>
+            <ul class="footer-links">
+              <li><a href="#products">GRC Products</a></li>
+              <li><a href="#products">FRP Products</a></li>
+              <li><a href="#products">Concrete Products</a></li>
+              <li><a href="#products">Jaali & Panels</a></li>
+              <li><a href="#products">Sculptures</a></li>
+              <li><a href="#products">Custom Manufacturing</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h4>Contact Info</h4>
+            <ul class="footer-contact">
+              <li>
+                Plot No. 122, Block C, Ecotech III<br />Greater Noida<br />Uttar
+                Pradesh – 201318
+              </li>
+              <li>Contact: <a href="tel:+919643482200">+91 96434 82200</a></li>
+              <li>
+                Email:
+                <a href="mailto:aplusmakers@gmail.com">aplusmakers@gmail.com</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+         <div class="footer-social">
+                <h4>Connect With Us</h4>
+                <div class="social-links">
+                   
+                    <a href="https://www.instagram.com/aplusmakers" target="_blank" rel="noopener" aria-label="Instagram" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                        </svg>
+                    </a>
+                    
+                    <a href="https://x.com/aplusmakers" target="_blank" rel="noopener" aria-label="Twitter/X" class="social-link x">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/@ApllusMakers" target="_blank" rel="noopener" aria-label="YouTube" class="social-link ">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                        </svg>
+                    </a>
+                    <a href="https://wa.me/919643482200" target="_blank" rel="noopener" aria-label="WhatsApp" class="social-link whatsapp">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+        <div class="footer-bottom">
+          <p>&copy; 2026 Aplus Makers. All Rights Reserved.</p>
+          <p>Designed & Developed for Excellence in Manufacturing</p>
+        </div>
+      </div>
     </footer>
-  </div>
-</body>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop" class="scroll-top" aria-label="Scroll to top">
+      ↑
+    </button>
+
+    <script src="script.js"></script>
+  </body>
 </html>
