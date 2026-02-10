@@ -645,9 +645,11 @@ section {
 }
 
 .director-quote {
+    /* font-style: italic; */
     font-size: 1.2rem;
     line-height: 1.8;
-    font-style: italic;
+    font-style:normal;
+    font-family: sans-serif;
     color: rgba(255, 255, 255, 0.95);
     margin-bottom: var(--spacing-xl);
 }
